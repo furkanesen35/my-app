@@ -11,13 +11,13 @@ function Header() {
    <div className="hidden lg:flex lg:flex-row lg:justify-center lg:items-center bg-[#4a0083] h-[40px]">
     <div className="text-white text-xs sm:text-sm">
      Think you've got what it takes for a career in Data? Find out in just one minute!
-     <button className="text-black bg-yellow-400 px-2 py-1 ml-2 rounded">Take the test now!</button>
+     <button className="text-black bg-yellow-400 px-2 py-1 ml-2 rounded cursor-pointer">Take the test now!</button>
     </div>
    </div>
 
    {/* Main Navigation */}
    <nav className="flex flex-row justify-between text-white bg-black items-center h-[50px] px-4">
-    <div>DataScientest</div>
+    <div>Datarithmus</div>
 
     {/* Desktop Navigation */}
     <div className="hidden lg:flex flex-row justify-around w-[500px]">
@@ -43,7 +43,7 @@ function Header() {
      <button className="mr-4 text-white hover:text-gray-300" onClick={() => setIsMenuOpen(!isMenuOpen)}>
       {isMenuOpen ? '✕' : '☰'}
      </button>
-     <button className="hidden bg-blue-500 text-white px-4 py-1 rounded hover:bg-blue-600">Book an Appointment</button>
+     <button className="hidden bg-blue-500 text-white px-4 py-1 rounded hover:bg-blue-600 cursor-pointer">Book an Appointment</button>
     </div>
 
     {/* Mobile Navigation */}
@@ -67,7 +67,7 @@ function Header() {
 
     {/* Appointment Button for Desktop */}
     <div className="hidden lg:block">
-     <button className="bg-blue-500 text-white px-4 py-1 rounded hover:bg-blue-600">Book an Appointment</button>
+     <button className="bg-blue-500 text-white px-4 py-1 rounded hover:bg-blue-600 cursor-pointer">Book an Appointment</button>
     </div>
    </nav>
   </header>
